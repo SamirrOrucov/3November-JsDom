@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: aqua;
+      }
+      i {
+        font-size: 100px;
+        color: orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 500ms;
+      }
+    </style>
+  </head>
+  <body>
+    <i class="fa-solid fa-fish-fins"></i>
+
+    <script>
+      const icon = document.querySelector("i");
+      let x = 0;
+      let y = 0;
+      document.body.addEventListener("keydown", function (e) {
+        switch (e.code) {
+          case "KeyA":
+            x -= 20;
+            icon.style.left = x + "px";
+
+            break;
+          case "KeyD":
+            x += 20;
+            icon.style.left = x + "px";
+
+            break;
+          case "KeyW":
+            y -= 20;
+            icon.style.top = y + "px";
+
+            break;
+          case "KeyS":
+            y += 20;
+            icon.style.top = y + "px";
+
+            break;
+          default:
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

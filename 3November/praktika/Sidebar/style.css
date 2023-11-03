@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    position: relative;
+}
+.click{
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+.nav-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    transform: translate(-200px, 0px);
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+    
+}
+.xicon{
+    padding-left: 90%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+    gap: 50px;
+    
+}
